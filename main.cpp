@@ -1,26 +1,67 @@
 #include <iostream>
-#include <cmath>
-int main()
+#include <string>
+
+void shiftSymbol (char &symbol, int shift)
 {
-  float a, b, c;
-  std::cout << "a, b, c:";
-  std::cin >> a >> b >> c;
-  if (a == 0)
-  {
-      std::cout << "Not a quadratic equation!" << std::endl;
-  }
-  else  {
-      float discriminant = b * b - 4 * a * c;
-      if (discriminant > 0) {
-          float x1 = (-b + std::sqrt(discriminant)) / (2 * a);
-          float x2 = (-b - std::sqrt(discriminant)) / (2 * a);
-          std::cout << "Root 1, 2: " << x1 << ", " << x2 << std::endl;
-      } else if (discriminant == 0) {
-          float x3 = -b / (2 * a);
-          std::cout << "Root: " << x3 << std::endl;
-      } else {
-          std::cout << "Complex scenario is not supported!" << std::endl;
-      }
-  }
+    char aSymbol;
+    char zSymbol;
+    if (symbol >= 'A' && symbol <= 'Z')
+    {
+        aSymbol = 'A';
+        zSymbol = 'Z';
+    } else if (symbol >= 'a' && symbol <= 'z')
+    {
+        aSymbol = 'a';
+        zSymbol = 'z';
+    }
+    else
+    {
+        return;
+    }
+
+    int shiftedSymbol = symbol + shift % 26;
+
+    if (shiftedSymbol > zSymbol)
+    {
+        symbol = aSymbol + shiftedSymbol % zSymbol - 1;
+
+    }
+    else if (shiftedSymbol < aSymbol)
+    {
+        symbol = zSymbol - aSymbol % shiftedSymbol + 1;
+    }
+    else {
+        symbol += shift % 26;
+    }
 }
 
+std::string encrypt_caesar (std::string &text, int shift)
+{
+    for (auto i : text)
+    {
+        shiftSymbol(text[i], shift);
+    }
+    return text;
+}
+
+std::string decrypt_caesar (std::string &text, int shift)
+{
+    for (auto i : text)
+    {
+        shiftSymbol(text[i], - shift);
+    }
+    return text;
+}
+
+int main()
+{
+    std::cout<<"<<<< Caesar's Secret correspondence >>>>\n";
+    std::string text;
+    int shift;
+    std::cout<<"Caesar! Write! :\n";
+    std::getline(std::cin,text);
+    std::cout<<"Please come up with an encryption key :\n";
+    std::cin>>shift;
+    std::cout << "Encrypted text: " <<  encrypt_caesar(text, shift) << std::endl;
+    std::cout << "Decrypted text: " <<  decrypt_caesar(text, shift) << std::endl;
+}
