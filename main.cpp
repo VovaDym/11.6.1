@@ -37,7 +37,7 @@ void shiftSymbol (char &symbol, int shift)
 
 std::string encrypt_caesar (std::string &text, int shift)
 {
-    for (auto i : text)
+    for (int i = 0;i < text.length();++i)
     {
         shiftSymbol(text[i], shift);
     }
@@ -46,7 +46,7 @@ std::string encrypt_caesar (std::string &text, int shift)
 
 std::string decrypt_caesar (std::string &text, int shift)
 {
-    for (auto i : text)
+    for (int i = 0;i < text.length();++i)
     {
         shiftSymbol(text[i], - shift);
     }
