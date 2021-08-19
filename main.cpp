@@ -18,23 +18,20 @@ void shiftSymbol (char &symbol, int shift)
     {
         return;
     }
-
     int shiftedSymbol = symbol + shift % 26;
-
     if (shiftedSymbol > zSymbol)
     {
         symbol = aSymbol + shiftedSymbol % zSymbol - 1;
-
     }
     else if (shiftedSymbol < aSymbol)
     {
         symbol = zSymbol - aSymbol % shiftedSymbol + 1;
     }
-    else {
+    else
+    {
         symbol += shift % 26;
     }
 }
-
 std::string encrypt_caesar (std::string &text, int shift)
 {
     for (int i = 0;i < text.length();++i)
@@ -43,7 +40,6 @@ std::string encrypt_caesar (std::string &text, int shift)
     }
     return text;
 }
-
 std::string decrypt_caesar (std::string &text, int shift)
 {
     for (int i = 0;i < text.length();++i)
@@ -52,16 +48,15 @@ std::string decrypt_caesar (std::string &text, int shift)
     }
     return text;
 }
-
 int main()
 {
     std::cout<<"<<<< Caesar's Secret correspondence >>>>\n";
     std::string text;
     int shift;
-    std::cout<<"Caesar! Write! :\n";
+    std::cout << "Caesar! Write! :\n";
     std::getline(std::cin,text);
-    std::cout<<"Please come up with an encryption key :\n";
-    std::cin>>shift;
+    std::cout << "Please come up with an encryption key :\n";
+    std::cin >> shift;
     std::cout << "Encrypted text: " <<  encrypt_caesar(text, shift) << std::endl;
     std::cout << "Decrypted text: " <<  decrypt_caesar(text, shift) << std::endl;
 }

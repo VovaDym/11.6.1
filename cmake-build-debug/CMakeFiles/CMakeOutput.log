@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/777/CLionProjects/11.6.1/cmake-build-debug/CMakeFiles/3.19.2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "C:/Users/777/Documents/GitHub/11.6.1/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30037/bin/Hostx86/x86/cl.exe 
@@ -45,29 +45,27 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/777/CLionProjects/11.6.1/cmake-build-debug/CMakeFiles/3.19.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/777/Documents/GitHub/11.6.1/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/777/CLionProjects/11.6.1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/777/Documents/GitHub/11.6.1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_2cc00\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_2cc00.dir\build.make /nologo -L                  CMakeFiles\cmTC_2cc00.dir\build
-Building C object CMakeFiles/cmTC_2cc00.dir/CMakeCCompilerABI.c.obj
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @C:\Users\777\AppData\Local\Temp\nm338F.tmp
-CMakeCCompilerABI.c
-Linking C executable cmTC_2cc00.exe
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_2cc00.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_2cc00.dir\objects1.rsp @C:\Users\777\AppData\Local\Temp\nm341C.tmp
+Run Build Command(s):nmake -f Makefile /nologo cmTC_bb511\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_bb511.dir\build.make /nologo -L                  CMakeFiles\cmTC_bb511.dir\build
+Building C object CMakeFiles/cmTC_bb511.dir/CMakeCCompilerABI.c.obj
+	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_bb511.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\777\Documents\GitHub\11.6.1\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @C:\Users\777\AppData\Local\Temp\nmFD48.tmp
+Linking C executable cmTC_bb511.exe
+	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_bb511.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_bb511.dir\objects1.rsp @C:\Users\777\AppData\Local\Temp\nmFF0E.tmp
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/777/CLionProjects/11.6.1/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/777/Documents/GitHub/11.6.1/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_15ae0\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_15ae0.dir\build.make /nologo -L                  CMakeFiles\cmTC_15ae0.dir\build
-Building CXX object CMakeFiles/cmTC_15ae0.dir/CMakeCXXCompilerABI.cpp.obj
-	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @C:\Users\777\AppData\Local\Temp\nm3801.tmp
-CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_15ae0.exe
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_15ae0.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_15ae0.dir\objects1.rsp @C:\Users\777\AppData\Local\Temp\nm38CD.tmp
+Run Build Command(s):nmake -f Makefile /nologo cmTC_6addf\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_6addf.dir\build.make /nologo -L                  CMakeFiles\cmTC_6addf.dir\build
+Building CXX object CMakeFiles/cmTC_6addf.dir/CMakeCXXCompilerABI.cpp.obj
+	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_6addf.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\Users\777\Documents\GitHub\11.6.1\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @C:\Users\777\AppData\Local\Temp\nm4A8.tmp
+Linking CXX executable cmTC_6addf.exe
+	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_6addf.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_6addf.dir\objects1.rsp @C:\Users\777\AppData\Local\Temp\nm564.tmp
 
 
 

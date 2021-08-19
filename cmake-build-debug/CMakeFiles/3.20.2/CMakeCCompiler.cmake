@@ -20,7 +20,7 @@ set(MSVC_C_ARCHITECTURE_ID X86)
 
 set(CMAKE_AR "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30037/bin/Hostx86/x86/lib.exe")
 set(CMAKE_C_COMPILER_AR "")
-set(CMAKE_RANLIB "")
+set(CMAKE_RANLIB ":")
 set(CMAKE_C_COMPILER_RANLIB "")
 set(CMAKE_LINKER "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30037/bin/Hostx86/x86/link.exe")
 set(CMAKE_MT "C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x86/mt.exe")
@@ -48,6 +48,7 @@ set(CMAKE_C_LINKER_PREFERENCE 10)
 # Save compiler ABI information.
 set(CMAKE_C_SIZEOF_DATA_PTR "4")
 set(CMAKE_C_COMPILER_ABI "")
+set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
 
 if(CMAKE_C_SIZEOF_DATA_PTR)
